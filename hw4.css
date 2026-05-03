@@ -1,0 +1,244 @@
+/*
+Name: Danielle Dujunco
+Date created: 4/28/2026
+Date last edited: 5/2/2026
+Version: 1.0
+Description: Homework 4 CSS 
+*/
+header {
+    position: sticky;
+    top: 0;
+    width: 100%;
+    background-color:rgb(143, 158, 114);
+    transition: background-color 0.4 ease-in-out;
+    z-index: 1000;
+}
+
+header.scrolled{
+    background-color:rgb(143, 158, 114);
+    opacity: 1.0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(201, 215, 166);
+    margin: 0;
+    height: 100%;
+    min-height: 100vh; /* page is height of the viewport */
+}
+
+form {
+    flex-grow: 1;
+}
+
+h1, h2 {
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-style: italic;
+    flex-grow: 1;
+}
+main {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+    flex-grow: 1;
+}
+
+.image {
+    text-align: left;
+}
+
+.td1 {
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+th {
+    text-align: center;
+    font-family:'Times New Roman', Times, serif;
+}
+
+footer {
+    position: flex;
+    bottom: 0;
+    width: 100%;
+    background-color:rgb(114, 136, 82);
+    height: 2.0rem;
+}
+
+#footer {
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin-right: 10px;
+}
+
+label {
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+input {
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+input[type="text"] {
+    width: 150px;
+}
+
+input[type="text"][maxlength="1"] {
+    width: 30px;
+}
+textarea {
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+#today {
+    text-align: left;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+    margin-right: 5px;
+    font-size: 14px;
+    color: black;
+}
+
+p {
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.error {
+    color:red;
+    font-size: 12px;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+}
+
+.pass-message {
+    text-align: right;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: normal;
+    position: relative;
+    left: 100px;
+    background: transparent;
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color: red; 
+}
+
+#review {
+    margin-top: 5px;
+}
+
+table.output,
+tr.output,
+td.output{
+    width:500px;
+    background-color: rgb(143, 158, 114);
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color:white;
+}
+
+td.outputdata{
+    width: 500px;
+    background-color: rgb(143, 158, 114);
+    padding: 10px;
+    border-spacing: 2px;
+    border-radius: 20px;
+    color:white;
+}
+
+/* alert box */
+#alert-box {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: transparent;
+}
+
+    #alert-content {
+        background-color: rgb(246, 246, 246);
+        border-radius: 10px;
+        width: 300px;
+        height: 130px;
+        margin: auto;
+        margin-top: 20%;
+        padding: 30px;
+        text-align: center;
+    }
+
+    #alert-content h4 {
+        font-size: 20px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+
+    #close-alert {
+        background-color: rgb(253,253,253);
+        border-width: 1px;
+        border-style:dashed;
+        color:darkgray;
+        border-color:black;
+        font-size: 15px;
+        font-weight: bold;
+        height: 20px;
+        width: 80px;
+        border-radius: 20px;
+        cursor: pointer;
+        margin-top: 20px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif
+
+    }
+
+    /*iframe styling */
+    .iframe-container {
+        position: absolute;
+        top: 25%;
+        right: 15px;
+        width: 25%;
+        height: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+
+    .iframe-container iframe {
+        width: 95%;
+        height: 20%;
+        border: 1px solid black;
+    }
+
+    /* cookie welcome messaage styling */
+    #welcome1 {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Times New Roman', 'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
+
+    #welcome2 {
+        margin-top: 20px;
+        font-size: 20px;
+        text-align: center;
+        font-family:'Times New Roman', Times, serif;
+        font-weight: normal;
+    }
